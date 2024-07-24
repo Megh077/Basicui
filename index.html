@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="border"></div>
+        <div class="header">
+            <div class="logo">
+                <img src="belc.png" alt="Logo"> <h1>ベルク</h1>
+            </div>
+            <div class="profile">
+                <img src="profile.png" alt="User">
+                <p>パイヤー</p>
+                <img src="arrowdown.png" alt="down_arrow" class="dropdown-arrow">
+            </div>
+        </div>
+        
+        <main class="main-content">
+        
+            <div class="sidebar">
+                <div class="sidebar-item">
+                    <div class="sidebar-img"><img src="calender.png" alt="Calender"></div>
+                    <div class="sidebar-text"><a href="#">イベントリスト</a></div>
+                </div>
+                <div class="sidebar-item active">
+                    <div class="sidebar-img"><img src="quick reference right.png" alt="Quickrefernce"></div>
+                    <div class="sidebar-text-arrow"><a href="#">情報登録</a></div>
+                    <div class="red-dropdown-arrow"><img src="arrow-red.png" alt="red-dropdown-arrow"></div>
+                </div>
+                <div class="rightside">
+                    <div class="sidebar-item">
+                        <div class="sidebar-img"><div class="grey-img"><img src="xlsx.png" alt="Xlsx"></div></div>
+                        <div class="sidebar-grey-text"><a href="#">ファイル読込 (店舗、エリア、商品分績)</a></div>
+                    </div>
+                    <div class="sidebar-item">
+                        <div class="sidebar-img"><div class="grey-img"><img src="calendersetting.png" alt="CalenderSetting"></div></div>
+                        <div class="sidebar-grey-text"><a href="#">イベント期間設定</a></div>
+                    </div>
+                    <div class="sidebar-item">
+                        <div class="sidebar-img"><img src="xlsx.png" alt="Xlsx"></div>
+                        <div class="sidebar-text"><a href="#">ファイル読込(前年実績)</a></div>
+                    </div>
+                    <div class="sidebar-item active">
+                        <div class="sidebar-img"><img src="xlsx.png" alt="Xlsx"></div>
+                        <div class="sidebar-text"><a href="#">前年実績設定(日付、除外商品、店舗)</a></div>
+                    </div>
+                    <div class="sidebar-item">
+                        <div class="sidebar-img"><img src="xlsx.png" alt="Xlsx"></div>
+                        <div class="sidebar-text"><a href="#">ファイル読込 (商品情報)</a></div>
+                    </div>
+                    <div class="sidebar-item">
+                        <div class="sidebar-img"><img src="quick reference left.png" alt="Quickrefernce"></div>
+                        <div class="sidebar-text"><a href="#">ファイル読込履歷</a></div>
+                    </div>
+                </div>
+                <div class="sidebar-item">
+                    <div class="sidebar-img"><img src="download.png" alt="Download"></div>
+                    <div class="sidebar-text"><a href="#">登録データDL</a></div>
+                </div>
+            </div> 
+                
+            <div class="content">
+                <h1>前年実績設定 (日付, 除外商品, 店舗)</h1>
+                <div class="form-container">
+                    <div class="form-group">
+                        <label for="event-select">イベント選択</label>
+                        <select id="event-select">
+                            <option value="obon1">お盆1</option>
+                        </select>
+                        <div class="black-border"></div>
+                        <div class="three-texts">
+                            <span class="text-red">日付</span>
+                            <span class="text-black">除外商品設定 </span>
+                            <span class="text-black">店舗</span>
+                        </div>
+
+                    </div>
+                    
+                  
+                    
+                    <div class="event-details">
+                        <div class="events-box">
+                        <div class="previous-event">
+                            <h4>前年のイベント</h4>
+                            <div class="white-box">
+                                <div class="event-info">
+                                    <p>イベント: お盆1</p>
+                                    <p>開始日:2023/08/08(火)</p>
+                                </div>
+                                <div class="event-info">
+                                    <p>年度:2023</p>
+                                    <p>終了日:2023/08/15(火)</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="current-event">
+                            <h4>今回のイベント</h4>
+                            <div class="white-box">
+                                <div class="event-info">
+                                    <p>イベント: お盆1</p>
+                                    <p>開始日:2024/08/10(土)</p>
+                                </div>
+                                <div class="event-info">
+                                    <p>年度:2024</p>
+                                    <p>終了日:2024/08/12(月)</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                        <div class="date-selector">
+                            <div class="left-side-calender" >
+                                <label>前年の日程</label>
+                                <select>
+                                    <option value="1">2023/08/10(木)</option>
+                                </select>
+                                <div class=arrow><img src="double-arrow.png" alt="Arrow"></div>
+                                <select>
+                                    <option value="1">2023/08/11(金)</option>
+                                </select>
+                                <div class=arrow><img src="double-arrow.png" alt="Arrow"></div>
+                                <select>
+                                    <option value="1">2023/08/12(土)</option>
+                                </select>
+                                <div class=arrow><img src="double-arrow.png" alt="Arrow"></div>
+                            </div>
+                            <div class="right-side-calender" >
+                                <label>今回の日程</label>
+                                <select>
+                                    <option value="1">2024/08/10(土)</option>
+                                </select>
+                                <select>
+                                    <option value="1">2024/08/11(日)</option>
+                                </select>
+                                <select>
+                                    <option value="1">2024/08/12(月)</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        
+                        <div class="buttons">
+                            <button class="reset-button">変更内容の破棄</button>
+                            <button class="submit-button">設定</button>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </main>
+    </div>
+    </body>
+    </html>
+    
+    
